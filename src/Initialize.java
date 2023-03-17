@@ -9,6 +9,6 @@ public class Initialize {
 
         dayBin.getInitialized();
 
-        System.out.println(dayBin.dayList.get(14).location);
+        System.out.println(dayBin.dayList.get(14).strDate);
     }
 }
