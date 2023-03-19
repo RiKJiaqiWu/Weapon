@@ -24,13 +24,13 @@ public class Outline {
 
         frame.setTitle("周期小帮手");
 
-        JPanel ROOT = new JPanel();
+        JPanel root = new JPanel();
 
-        frame.setContentPane(ROOT);
+        frame.setContentPane(root);
 
         JButton button = new JButton();
 
-        ROOT.add(button);
+        root.add(button);
     }
 
     public static void getPanel(){
