@@ -29,15 +29,19 @@ public class Initialize {
 
         root.setLayout(new MyLayout());
 
+        int j = 0;
+
         for(int i = 0;i < dayBin.dayList.size();i++){
 
-            int index = i % 12;
+            int index = j % 12;
 
             index = index/4;
 
             if(dayBin.dayList.get(i).workdayflag) {
 
                 root.add(new DayLabel(dayBin.dayList.get(i).strDate, ColorList.get(index)));
+
+                j++;
 
             }else{
 
