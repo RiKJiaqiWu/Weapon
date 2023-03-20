@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,11 +22,18 @@ public class Bin {
         String strDate;
         String logName;
 
+        boolean workdayflag;
 
-        private Day(int temp_location, String temp_strdate) {
+        private Day(int temp_location, String temp_strdate,String temp_workdayflag) {
             this.location = temp_location;
             this.strDate = temp_strdate;
             this.logName = temp_strdate + "_logFile";
+            if(Integer.valueOf(temp_workdayflag)==0) {
+                this.workdayflag = false;
+            }else{
+                this.workdayflag = true;
+            }
+            System.out.println(this.workdayflag);
         }
     }
 
@@ -42,7 +50,8 @@ public class Bin {
             if(i == 36 ){
                 i = 0;
             }
-            dayBin.dayList.add(new Day(i,temp));
+            String[] temp_string = temp.split(",");
+            dayBin.dayList.add(new Day(i,temp_string[0],temp_string[1]));
             i++;
         }
     }

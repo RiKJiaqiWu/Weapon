@@ -1,54 +1,39 @@
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class MyLayout implements LayoutManager2 {
+public class MyLayout extends LayoutAdapter {
+
+    List<Component> list = new ArrayList<>();
 
     @Override
     public void addLayoutComponent(Component comp, Object constraints) {
-
-    }
-
-    @Override
-    public Dimension maximumLayoutSize(Container target) {
-        return null;
-    }
-
-    @Override
-    public float getLayoutAlignmentX(Container target) {
-        return 0;
-    }
-
-    @Override
-    public float getLayoutAlignmentY(Container target) {
-        return 0;
-    }
-
-    @Override
-    public void invalidateLayout(Container target) {
-
-    }
-
-    @Override
-    public void addLayoutComponent(String name, Component comp) {
-
+        list.add(comp);
     }
 
     @Override
     public void removeLayoutComponent(Component comp) {
-
-    }
-
-    @Override
-    public Dimension preferredLayoutSize(Container parent) {
-        return null;
-    }
-
-    @Override
-    public Dimension minimumLayoutSize(Container parent) {
-        return null;
+        list.remove(comp);
     }
 
     @Override
     public void layoutContainer(Container parent) {
+        int x = 50;
+        int y = 50;
+        int width = parent.getWidth();
+        int height = parent.getHeight();
+        Component[] labels = parent.getComponents();
+
+        for(int i = 0;i < list.size();i++){
+            Component l = labels[i];
+            if(x>(width-50)){
+                x = 50;
+                y += 50;
+            }
+            l.setBounds(x,y,80,40);
+            x += 90;
+
+        }
 
     }
 }

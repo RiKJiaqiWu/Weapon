@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3df8938f-c4fb-4ab2-86de-82df3ac3e4b7" name="Changes" comment="0317">
-      <change afterPath="$PROJECT_DIR$/src/DayLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyLayout.java" afterDir="false" />
+    <list default="true" id="3df8938f-c4fb-4ab2-86de-82df3ac3e4b7" name="Changes" comment="0320">
+      <change afterPath="$PROJECT_DIR$/src/LayoutAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Outline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Outline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Initialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorkDayMapping/Mapping2023.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/WorkDayMapping/Mapping2023.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +52,10 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor.code.editing"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Bin.getInitialized">
+  <component name="RunManager" selected="Application.Initialize">
     <configuration name="Initialize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Initialize" />
       <module name="Weapon" />
@@ -96,6 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Initialize" />
+        <item itemvalue="Application.Outline" />
         <item itemvalue="JUnit.Outline.getFrame" />
         <item itemvalue="JUnit.Bin.getInitialized" />
       </list>
@@ -167,9 +172,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0313" />
-    <MESSAGE value="0314" />
     <MESSAGE value="0317" />
-    <option name="LAST_COMMIT_MESSAGE" value="0317" />
+    <MESSAGE value="0314" />
+    <MESSAGE value="0320" />
+    <option name="LAST_COMMIT_MESSAGE" value="0320" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
