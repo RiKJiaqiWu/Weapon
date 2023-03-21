@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,7 +8,6 @@ import java.util.List;
 public class Initialize {
 
     public static Bin dayBin = Bin.getInstance();
-
     public static void main(String[] args) throws IOException {
 
         List<Color> ColorList = new ArrayList<>();
@@ -25,9 +25,35 @@ public class Initialize {
 
         JPanel root = new JPanel();
 
-        Init.setContentPane(root);
+        JScrollPane scrollPane = new JScrollPane();
 
-        root.setLayout(new MyLayout());
+        JPanel leftpanel = new JPanel();
+
+        MyLayout LayOut = new MyLayout();
+
+        JPanel rightpanel = new JPanel();
+
+        rightpanel.setPreferredSize(new Dimension(300,600));
+
+        JSplitPane outline = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,scrollPane,rightpanel);
+
+        outline.setDividerLocation(500);
+
+        outline.setContinuousLayout(true);
+
+//        Init.setContentPane(outline);
+
+        leftpanel.setBorder(new EmptyBorder(5,5,5,5));
+
+        leftpanel.setLayout(LayOut);
+
+//        scrollPane.add(leftpanel);
+
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+
+        scrollPane.setViewportView(leftpanel);
+
+//        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 
         int j = 0;
 
@@ -39,22 +65,25 @@ public class Initialize {
 
             if(dayBin.dayList.get(i).workdayflag) {
 
-                root.add(new DayLabel(dayBin.dayList.get(i).strDate, ColorList.get(index)));
+                leftpanel.add(new DayLabel(dayBin.dayList.get(i).strDate, ColorList.get(index)));
 
                 j++;
 
             }else{
 
-                root.add(new DayLabel(dayBin.dayList.get(i).strDate, ColorList.get(3)));
+                leftpanel.add(new DayLabel(dayBin.dayList.get(i).strDate, ColorList.get(3)));
             }
 
         }
 
-//        root.add(new DayLabel("1", Color.cyan));
-//        root.add(new DayLabel("2", Color.cyan));
-//        root.add(new DayLabel("3", Color.cyan));
-//        root.add(new DayLabel("4", Color.cyan));
-//        root.add(new DayLabel("5", Color.cyan));
-//        root.add(new DayLabel("6", Color.cyan));
+        leftpanel.setPreferredSize(new Dimension(680,LayOut.y+40));
+
+        Init.add(outline);
+
+//        scrollPane.setViewportView(root);
+//
+//        root.add(scrollPane,BorderLayout.CENTER);
+
     }
+
 }

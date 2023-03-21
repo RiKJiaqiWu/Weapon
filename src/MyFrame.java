@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class MyFrame extends JFrame {
     public MyFrame(String title) {
@@ -7,9 +6,8 @@ public class MyFrame extends JFrame {
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        this.setSize(800,5000);
+        this.setSize(980,600);
 
         this.setVisible(true);
-
     }
 }

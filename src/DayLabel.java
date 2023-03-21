@@ -6,6 +6,6 @@ public class DayLabel extends JLabel {
         this.setText(text);
         this.setOpaque(true);
         this.setBackground(labelColor);
-        this.setPreferredSize(new Dimension(40,40));
+//        this.setPreferredSize(new Dimension(40,40));
     }
 }

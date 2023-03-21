@@ -1,8 +1,13 @@
+import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MyLayout extends LayoutAdapter {
+
+    public int x;
+
+    public int y;
 
     List<Component> list = new ArrayList<>();
 
@@ -18,22 +23,23 @@ public class MyLayout extends LayoutAdapter {
 
     @Override
     public void layoutContainer(Container parent) {
-        int x = 50;
-        int y = 50;
+        x = 30;
+        y = 30;
         int width = parent.getWidth();
         int height = parent.getHeight();
         Component[] labels = parent.getComponents();
 
+        int flag = 0;
         for(int i = 0;i < list.size();i++){
             Component l = labels[i];
-            if(x>(width-50)){
-                x = 50;
-                y += 50;
-            }
             l.setBounds(x,y,80,40);
+            flag++;
             x += 90;
-
+            if(flag == 7){
+                flag = 0;
+                y += 50;
+                x = 30;
+            }
         }
-
     }
 }
