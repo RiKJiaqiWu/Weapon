@@ -2,6 +2,7 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,41 +20,16 @@ public class Initialize {
 
         dayBin.getInitialized();
 
-        System.out.println(dayBin.dayList.get(3).workdayflag);
-
-        MyFrame Init = new MyFrame("周期小帮手");
-
-        JPanel root = new JPanel();
-
-        JScrollPane scrollPane = new JScrollPane();
-
+//leftpanel Setup
         JPanel leftpanel = new JPanel();
 
-        MyLayout LayOut = new MyLayout();
+        leftpanel.setOpaque(false);
 
-        JPanel rightpanel = new JPanel();
-
-        rightpanel.setPreferredSize(new Dimension(300,600));
-
-        JSplitPane outline = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,scrollPane,rightpanel);
-
-        outline.setDividerLocation(500);
-
-        outline.setContinuousLayout(true);
-
-//        Init.setContentPane(outline);
+        leftpanel.setPreferredSize(new Dimension(680,3000));
 
         leftpanel.setBorder(new EmptyBorder(5,5,5,5));
 
-        leftpanel.setLayout(LayOut);
-
-//        scrollPane.add(leftpanel);
-
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-
-        scrollPane.setViewportView(leftpanel);
-
-//        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+        leftpanel.setLayout(new MyLayout());
 
         int j = 0;
 
@@ -76,13 +52,44 @@ public class Initialize {
 
         }
 
-        leftpanel.setPreferredSize(new Dimension(680,LayOut.y+40));
+//RightPane Setup
+        JPanel rightpanel = new JPanel();
+
+        rightpanel.setPreferredSize(new Dimension(300,600));
+
+        rightpanel.setOpaque(false);
+
+//        ImageIcon imageIcon = new ImageIcon("usages/background.png");
+//
+//        JLabel background = new JLabel();
+//
+//        background.setIcon(imageIcon);
+//
+//        background.setBounds(0, 0, imageIcon.getIconWidth(), imageIcon.getIconHeight());
+//
+//        rightpanel.add(background);
+
+
+//ScrollPane Setup
+        JScrollPane scrollPane = new JScrollPane();
+
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+
+        scrollPane.setViewportView(leftpanel);
+
+//SplitPane Setup
+        JSplitPane outline = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,scrollPane,rightpanel);
+
+        outline.setOpaque(false);
+
+        outline.setDividerLocation(680);
+
+        outline.setContinuousLayout(true);
+
+//MyFrame Setup
+        MyFrame Init = new MyFrame("周期小帮手");
 
         Init.add(outline);
-
-//        scrollPane.setViewportView(root);
-//
-//        root.add(scrollPane,BorderLayout.CENTER);
 
     }
 

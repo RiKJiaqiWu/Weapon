@@ -32,7 +32,7 @@ public class writeFiles {
             }
         }
         System.out.println(stringBuffer);
-        Path filePath = Paths.get("src/LogFiles2023","Mapping2023.txt");
+        Path filePath = Paths.get("usages/LogFiles2023","Mapping2023.txt");
         try {
             if (Files.notExists(filePath, LinkOption.NOFOLLOW_LINKS)) {
                 Files.createFile(filePath);

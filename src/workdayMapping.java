@@ -22,12 +22,12 @@ public class workdayMapping {
 
     @Test
     public List getMapping_ver1p0() throws IOException {
-        List<String> lines = Files.readAllLines(Path.of("src/WorkDayMapping/Mapping2023.txt"), StandardCharsets.UTF_8 );
+        List<String> lines = Files.readAllLines(Path.of("usages/WorkDayMapping/Mapping2023.txt"), StandardCharsets.UTF_8 );
         return lines;
     }
     @Test
     public void getMapping(){
-        File file = new File("src/WorkDayMapping/Mapping2023.txt");
+        File file = new File("usages/WorkDayMapping/Mapping2023.txt");
         try {
             FileReader fr = new FileReader(file);
             int data = fr.read();

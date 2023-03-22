@@ -33,7 +33,7 @@ public class Bin {
             }else{
                 this.workdayflag = true;
             }
-            System.out.println(this.workdayflag);
+//            System.out.println(this.workdayflag);
         }
     }
 

@@ -5,10 +5,6 @@ import java.util.List;
 
 public class MyLayout extends LayoutAdapter {
 
-    public int x;
-
-    public int y;
-
     List<Component> list = new ArrayList<>();
 
     @Override
@@ -23,8 +19,8 @@ public class MyLayout extends LayoutAdapter {
 
     @Override
     public void layoutContainer(Container parent) {
-        x = 30;
-        y = 30;
+        int x = 30;
+        int y = 30;
         int width = parent.getWidth();
         int height = parent.getHeight();
         Component[] labels = parent.getComponents();
@@ -42,4 +38,5 @@ public class MyLayout extends LayoutAdapter {
             }
         }
     }
+
 }
