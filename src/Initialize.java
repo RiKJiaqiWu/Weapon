@@ -59,6 +59,25 @@ public class Initialize {
 
         rightpanel.setOpaque(false);
 
+        for(int i = 0;i < 3;i++){
+
+            JLabel ColorIcon = new DayLabel("      ", ColorList.get(i));
+
+            ColorIcon.setBounds(i*40,0,40,40);
+
+            JLabel wordFrame_1 = new JLabel("小周期" + (i+1));
+
+            wordFrame_1.setBounds(i*40,40,40,40);
+
+            rightpanel.add(ColorIcon);
+
+            rightpanel.add(wordFrame_1);
+
+        }
+        rightpanel.add(new Text("DailyText:",80,0,100,100));
+
+        rightpanel.add(new DailyText(100,0,100,100));
+
 //        ImageIcon imageIcon = new ImageIcon("usages/background.png");
 //
 //        JLabel background = new JLabel();

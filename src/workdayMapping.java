@@ -19,7 +19,6 @@ public class workdayMapping {
         System.out.println(lib);
     }
 
-
     @Test
     public List getMapping_ver1p0() throws IOException {
         List<String> lines = Files.readAllLines(Path.of("usages/WorkDayMapping/Mapping2023.txt"), StandardCharsets.UTF_8 );

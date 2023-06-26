@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3df8938f-c4fb-4ab2-86de-82df3ac3e4b7" name="Changes" comment="ultimate_0321">
-      <change afterPath="$PROJECT_DIR$/src/MyBackground.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+    <list default="true" id="3df8938f-c4fb-4ab2-86de-82df3ac3e4b7" name="Changes" comment="0322">
+      <change afterPath="$PROJECT_DIR$/src/DailyText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Text.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DayLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DayLabel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Initialize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogFiles2023/Mapping2023.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogFiles2023/roadmap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WorkDayMapping/Mapping2023.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/workdayMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workdayMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/writeFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/writeFiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +54,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.Initialize">
     <configuration name="Initialize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Initialize" />
       <module name="Weapon" />
@@ -102,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Initialize" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.writeFiles" />
         <item itemvalue="Application.Outline" />
         <item itemvalue="JUnit.Outline.getFrame" />
@@ -182,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679391410473</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="0322">
+      <created>1679464307289</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679464307289</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +208,8 @@
     <MESSAGE value="0314" />
     <MESSAGE value="0320" />
     <MESSAGE value="ultimate_0320" />
-    <option name="LAST_COMMIT_MESSAGE" value="ultimate_0320" />
+    <MESSAGE value="0322" />
+    <option name="LAST_COMMIT_MESSAGE" value="0322" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
