@@ -1,9 +1,8 @@
-import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyLayout extends LayoutAdapter {
+public class LeftPanel extends LayoutAdapter {
 
     List<Component> list = new ArrayList<>();
 

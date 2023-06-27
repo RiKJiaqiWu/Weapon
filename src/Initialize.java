@@ -2,7 +2,6 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +28,7 @@ public class Initialize {
 
         leftpanel.setBorder(new EmptyBorder(5,5,5,5));
 
-        leftpanel.setLayout(new MyLayout());
+        leftpanel.setLayout(new LeftPanel());
 
         int j = 0;
 
@@ -59,24 +58,27 @@ public class Initialize {
 
         rightpanel.setOpaque(false);
 
+        rightpanel.setLayout(new RightPanel());
+
         for(int i = 0;i < 3;i++){
 
             JLabel ColorIcon = new DayLabel("      ", ColorList.get(i));
 
-            ColorIcon.setBounds(i*40,0,40,40);
+//            ColorIcon.setBounds(i*20,0,20,20);
 
             JLabel wordFrame_1 = new JLabel("小周期" + (i+1));
 
-            wordFrame_1.setBounds(i*40,40,40,40);
+//            wordFrame_1.setBounds(i*20,20,20,20);
 
             rightpanel.add(ColorIcon);
 
             rightpanel.add(wordFrame_1);
 
         }
-        rightpanel.add(new Text("DailyText:",80,0,100,100));
 
-        rightpanel.add(new DailyText(100,0,100,100));
+//        rightpanel.add(new Text("DailyText:",80,80,20,10));
+//
+//        rightpanel.add(new DailyText(100,0,100,100));
 
 //        ImageIcon imageIcon = new ImageIcon("usages/background.png");
 //
