@@ -64,11 +64,7 @@ public class Initialize {
 
             JLabel ColorIcon = new DayLabel("      ", ColorList.get(i));
 
-//            ColorIcon.setBounds(i*20,0,20,20);
-
             JLabel wordFrame_1 = new JLabel("小周期" + (i+1));
-
-//            wordFrame_1.setBounds(i*20,20,20,20);
 
             rightpanel.add(ColorIcon);
 
@@ -76,8 +72,12 @@ public class Initialize {
 
         }
 
+        rightpanel.add(new JLabel("DailyText:"));
+
+        rightpanel.add(new DailyText());
+
 //        rightpanel.add(new Text("DailyText:",80,80,20,10));
-//
+
 //        rightpanel.add(new DailyText(100,0,100,100));
 
 //        ImageIcon imageIcon = new ImageIcon("usages/background.png");

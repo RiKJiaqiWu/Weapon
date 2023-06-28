@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3df8938f-c4fb-4ab2-86de-82df3ac3e4b7" name="Changes" comment="0626">
-      <change afterPath="$PROJECT_DIR$/src/RightPanel.java" afterDir="false" />
+    <list default="true" id="3df8938f-c4fb-4ab2-86de-82df3ac3e4b7" name="Changes" comment="0627">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DailyText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DailyText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Initialize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeftPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RightPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687772371241</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="0627">
+      <created>1687859186553</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687859186553</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +227,8 @@
     <MESSAGE value="ultimate_0320" />
     <MESSAGE value="0322" />
     <MESSAGE value="0626" />
-    <option name="LAST_COMMIT_MESSAGE" value="0626" />
+    <MESSAGE value="0627" />
+    <option name="LAST_COMMIT_MESSAGE" value="0627" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

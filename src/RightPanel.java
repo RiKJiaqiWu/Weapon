@@ -20,9 +20,9 @@ public class RightPanel extends LayoutAdapter {
     @Override
     public void layoutContainer(Container parent) {
 
-        int x,y;
+        int x = 20;
 
-        x = 20;
+        int y = 20;
 
         int edge = 20;
 
@@ -37,16 +37,26 @@ public class RightPanel extends LayoutAdapter {
             Component l = labels[i];
 
 //            x = (width-edge)/2+(i-1)*80-30;
-            x += i*20;
+            if(i != 0) {
+                x += 80;
+            }
 
-            l.setBounds(x,30,edge,edge);
+            l.setBounds(x,y,edge,edge);
 
             i++;
 
             l = labels[i];
 
-            l.setBounds(x+20,30,edge*2,10);
+            l.setBounds(x+20,y+5,edge*3,10);
         }
+
+        Component title = labels[6];
+
+        title.setBounds(20,60,60,10);
+
+        Component text = labels[7];
+
+        text.setBounds(20,80,300,300);
 
 
 
