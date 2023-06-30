@@ -1,11 +1,10 @@
 import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
 public class DailyText extends JTextArea {
-
-//    StringBuffer dailyText = new StringBuffer();
 
     private StringBuilder dailytext = new StringBuilder(3000);
 
@@ -16,8 +15,6 @@ public class DailyText extends JTextArea {
     public StringBuilder getFile(String fileName) throws IOException{
 
         File pathdir = new File(pathName);
-
-
 
         int flag = 0;
 
@@ -44,5 +41,23 @@ public class DailyText extends JTextArea {
 
     public DailyText(){
         this.setText(dailytext.toString());
+        this.setFont(new Font("monospaced", Font.PLAIN, 14));
+        this.setLineWrap(true);
+        this.setEditable(true);
+//        JScrollPane scroll = new JScrollPane(this);
+//        scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+//
+//        JPanel mainPanel = new JPanel();
+//        mainPanel.add(scroll);
+//
+//        final JFrame theFrame = new JFrame();
+//        theFrame.setTitle("textTastico");
+//        theFrame.setSize(1100, 1000);
+//        theFrame.setLocation(550, 25);
+//        theFrame.add(mainPanel); //add the panel to the frame
+//        theFrame.setVisible(true);
+        System.out.print(this.getText()); //double check output!!!
+
     }
+
 }

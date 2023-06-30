@@ -62,7 +62,11 @@ public class Initialize {
 
         for(int i = 0;i < 3;i++){
 
-            JLabel ColorIcon = new DayLabel("      ", ColorList.get(i));
+            JLabel ColorIcon = new JLabel();
+
+            ColorIcon.setOpaque(true);
+
+            ColorIcon.setBackground(ColorList.get(i));
 
             JLabel wordFrame_1 = new JLabel("小周期" + (i+1));
 
@@ -74,7 +78,11 @@ public class Initialize {
 
         rightpanel.add(new JLabel("DailyText:"));
 
-        rightpanel.add(new DailyText());
+        DailyText dailyText =new DailyText();
+
+        dailyText.getFile(dayBin.dayList.get(1).strDate);
+
+        rightpanel.add(dailyText);
 
 //        rightpanel.add(new Text("DailyText:",80,80,20,10));
 

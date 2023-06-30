@@ -36,7 +36,7 @@ public class RightPanel extends LayoutAdapter {
 
             Component l = labels[i];
 
-//            x = (width-edge)/2+(i-1)*80-30;
+//          x = (width-edge)/2+(i-1)*80-30;
             if(i != 0) {
                 x += 80;
             }
@@ -57,8 +57,6 @@ public class RightPanel extends LayoutAdapter {
         Component text = labels[7];
 
         text.setBounds(20,80,300,300);
-
-
 
 //        int x = 30;
 //        int y = 30;
